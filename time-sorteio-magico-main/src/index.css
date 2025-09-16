@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Modern Soccer Stadium Theme */
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 7%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 7%;
+    --popover-foreground: 0 0% 98%;
+
+    /* Electric Blue Primary */
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 217 100% 75%;
+
+    --secondary: 240 4% 16%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 4% 16%;
+    --muted-foreground: 240 5% 65%;
+
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 4% 16%;
+    --input: 240 6% 10%;
+    --ring: 217 91% 60%;
+
+    /* Stadium Theme Colors */
+    --field-green: 142 76% 36%;
+    --field-light: 142 76% 50%;
+    --team-a: 217 91% 60%;
+    --team-b: 25 95% 53%;
+    --winner-gold: 45 93% 47%;
+
+    /* Beautiful Gradients */
+    --gradient-field: linear-gradient(135deg, hsl(217 91% 60%), hsl(142 76% 36%));
+    --gradient-hero: linear-gradient(180deg, hsl(240 10% 3.9%), hsl(240 4% 16%));
+    --gradient-card: linear-gradient(135deg, hsl(240 10% 7%), hsl(240 4% 16%));
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 100% 75%));
+
+    /* Enhanced Shadows & Effects */
+    --shadow-field: 0 20px 50px -12px hsl(217 91% 60% / 0.4);
+    --shadow-glow: 0 0 60px hsl(217 100% 75% / 0.6);
+    --shadow-card: 0 10px 30px -5px hsl(240 10% 3.9% / 0.5);
+
+    /* Smooth Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
+
+    /* Sidebar */
+    --sidebar-background: 240 10% 7%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4% 16%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 240 4% 16%;
+    --sidebar-ring: 217 91% 60%;
+  }
+
+  .dark {
+    /* Dark Football Field Theme */
+    --background: 140 20% 8%;
+    --foreground: 124 30% 90%;
+
+    --card: 140 25% 12%;
+    --card-foreground: 124 30% 90%;
+
+    --popover: 140 25% 12%;
+    --popover-foreground: 124 30% 90%;
+
+    --primary: 124 65% 55%;
+    --primary-foreground: 140 20% 8%;
+    --primary-glow: 124 75% 65%;
+
+    --secondary: 140 20% 18%;
+    --secondary-foreground: 124 30% 90%;
+
+    --muted: 140 20% 15%;
+    --muted-foreground: 124 20% 60%;
+
+    --accent: 124 60% 50%;
+    --accent-foreground: 140 20% 8%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 140 20% 18%;
+    --input: 140 25% 12%;
+    --ring: 124 65% 55%;
+
+    /* Dark Theme Custom Colors */
+    --field-green: 124 65% 55%;
+    --field-light: 124 35% 25%;
+    --team-a: 220 80% 60%;
+    --team-b: 0 70% 60%;
+    --winner-gold: 45 85% 60%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
